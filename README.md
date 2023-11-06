@@ -45,6 +45,7 @@ Users should be able to:
 - Desktop-first workflow
 - [jQuery](https://jquery.com/) - JS Library
 - [React](https://react.dev/) - JS Library
+- [Bootstrap](https://getbootstrap.com/) - Frontend Style Toolkit
 
 ### Continued development
 
