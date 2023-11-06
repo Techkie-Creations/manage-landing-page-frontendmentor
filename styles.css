@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+/* GLOBAL */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("./images/bg-simplify-section-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: hsl(228, 39%, 23%);
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+/* VEIL */
+
+.veil {
+	display: none;
+	width: 100%;
+	height: 100vh;
+	background-color: hsl(228, 39%, 23%);
+	position: absolute;
+	opacity: 0.3;
+}
+
+.veil.active {
+	display: block;
+}
+
+/* HEADER AMD NAV */
+
+header {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+header .logo {
+	object-fit: contain;
+}
+
+header .nav {
+	display: flex;
+	align-items: center;
+	width: 70%;
+	justify-content: space-between;
+}
+
+header .nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 2rem;
+}
+
+header .nav ul li a {
+	color: hsl(228, 39%, 23%);
+}
+
+header .nav ul li a:hover {
+	color: hsl(227, 12%, 61%);
+}
+
+/* TOGGLERS */
+.menu {
+	object-fit: contain;
+	display: none;
+}
+
+.menu-close {
+	display: none;
+}
+
+.menu,
+.menu-close {
+	position: absolute;
+	right: 2rem;
+	z-index: 3;
+	cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+	display: flex;
+	width: 100%;
+	padding: 0 4rem;
+	gap: 2rem;
+}
+
+.hero .hero-text {
+	padding: 3rem 0;
+}
+
+.hero .hero-img {
+	width: 50%;
+	object-fit: contain;
+}
+
+.hero .hero-text h1 {
+	font-size: calc(100% * 3);
+}
+
+/* ABOUT SECTION */
+
+.about {
+	display: flex;
+	padding: 0 4rem;
+	gap: 2rem;
+	width: 100%;
+	margin-top: 4rem;
+}
+
+.about .right .right-info:nth-child(2),
+.about .right .right-info:nth-child(3) {
+	margin-top: 2rem;
+}
+
+.about .right .right-info .num {
+	border: 1px solid;
+	width: 5rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	background-color: hsl(12, 88%, 59%);
+	color: hsl(0, 0%, 98%);
+	float: left;
+	margin: 0 0.7rem 0 0;
+	vertical-align: middle;
+}
+
+.about .right .right-info .sub-title {
+	display: inline;
+	float: left;
+	vertical-align: bottom;
+	margin-top: 0.7rem;
+	padding: 0;
+	font-weight: 700;
+}
+
+.about .right .right-info .info {
+	display: inline-block;
+	margin: 0 0 0 5.7rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testify {
+	margin-top: 4rem;
+	text-align: center;
+}
+
+.testify h2 {
+	margin-bottom: 2rem;
+}
+
+.testify .contain {
+	width: 100%;
+}
+
+.testify .contain .subject {
+	width: 70%;
+	height: 20rem;
+	margin: auto;
+}
+
+.testify .contain .subject .carousel-item .content {
+	text-align: center;
+	background-color: hsl(0, 0%, 98%);
+	position: relative;
+	margin-top: 3rem;
+	padding: 0 3rem 2rem 3rem;
+}
+
+.testify .contain .subject .carousel-item .content img {
+	width: 5rem;
+	margin: -2rem 0 1rem 0;
+}
+
+/* CAROUSEL SLIDER */
+
+.carousel-indicators [data-bs-target] {
+	background-color: white;
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid hsl(12, 88%, 59%);
+	border-radius: 50%;
+	opacity: 1;
+}
+
+.carousel-indicators .active {
+	background-color: hsl(12, 88%, 59%);
+}
+
+/* EXTRA */
+
+.extra {
+	display: flex;
+	padding: 2rem 7rem;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4rem;
+	background-color: hsl(12, 88%, 59%);
+	color: white;
+}
+
+.extra .extra-title {
+	font-size: calc(100% * 2.2);
+	width: 50%;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: hsl(233, 12%, 13%);
+	width: 100%;
+	padding: 4rem 5rem 2rem 7rem;
+	color: hsl(0, 0%, 98%);
+}
+
+footer .inner-footer {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: flex-start;
+}
+
+footer .inner-footer .left-side {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 5rem;
+}
+
+footer .inner-footer .left-side .social {
+	display: flex;
+	gap: 1rem;
+	font-size: 1.5rem;
+}
+
+footer .inner-footer .left-side .social .icon {
+	cursor: pointer;
+}
+
+footer .inner-footer .left-side .social .icon:hover {
+	color: hsl(12, 88%, 59%);
+}
+
+footer .inner-footer .center {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin-right: 2rem;
+}
+
+footer .inner-footer .center ul li {
+	margin-bottom: 0.7rem;
+}
+
+footer .inner-footer .center ul li a {
+	color: hsl(0, 0%, 98%);
+}
+
+footer .inner-footer .center ul li a:hover {
+	color: hsl(12, 88%, 59%);
+}
+
+footer .inner-footer #news form {
+	display: flex;
+	gap: 0.5rem;
+}
+
+footer .inner-footer #news form button {
+	align-self: flex-start;
+}
+
+footer .rights {
+	text-align: right;
+	color: hsl(227, 12%, 61%);
+}
+
+/* FOOTER ATTRIBUTION */
+
+footer .end {
+	text-align: center;
+	color: hsl(227, 12%, 61%);
+}
+
+footer .end .avatar {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	object-position: 0rem 0.01rem;
+	object-fit: cover;
+}
+
+footer .end .attribution a {
+	text-decoration: none;
+	color: hsl(12, 88%, 59%);
+}
+
+footer .end .attribution a:hover {
+	color: hsl(0, 0%, 98%);
+}
+
+footer .end p.copy {
+	font-weight: 700;
+}
+
+/* NO CATEGORY */
+
+.odd {
+	background-color: hsl(0, 0%, 98%);
+	color: hsl(12, 88%, 59%);
+	box-shadow: 0 2px 3px hsl(0, 0%, 98%);
+}
+
+.odd:hover {
+	background-color: hsl(0, 0%, 98%);
+	color: hsl(12, 88%, 59%);
+	opacity: 0.9;
+}
+
+.cta {
+	width: 9rem;
+}
+
+#inp {
+	appearance: auto !important;
+}
+#helper {
+	color: #dc3545 !important;
+}
+
+.cta,
+#inp {
+	border-radius: 3rem !important;
+}
+
+.cta.major {
+	background-color: hsl(12, 88%, 59%);
+	color: hsl(0, 0%, 98%);
+	box-shadow: 0 2px 3px hsl(12, 88%, 59%);
+}
+
+.cta.major.first:hover {
+	color: white;
+}
+
+.cta.major:hover {
+	opacity: 0.9;
+	box-shadow: 0 5px 3px hsl(12, 88%, 59%);
+}
+
+.cta.major.lasts {
+	width: auto;
+}
+
+.cta.major.lasts,
+.cta.major.lasts:hover {
+	box-shadow: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 838px) {
+	header {
+		padding: 2rem;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	header .nav {
+		display: none;
+	}
+
+	header .nav.on {
+		display: block;
+		position: absolute;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-color: white;
+		top: 5rem;
+		width: 90%;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		padding: 2rem 0;
+	}
+
+	header .nav ul {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header .nav ul li a {
+		font-weight: 700;
+	}
+
+	header .nav ul.last {
+		display: none;
+	}
+
+	.hero {
+		width: 100%;
+		padding: 0 0.7rem;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.about {
+		flex-direction: column;
+		text-align: center;
+		padding: 0 0.5rem;
+	}
+
+	.about .right,
+	.about .left {
+		width: 100%;
+	}
+
+	.about .right .right-info .num {
+		margin: 0;
+	}
+
+	.about .right .right-info .sub-title {
+		background-color: hsl(13, 100%, 96%);
+		text-align: left;
+		width: 70%;
+		padding: 0.5rem 0;
+		margin-top: 0.3rem;
+	}
+
+	.about .right .right-info .info {
+		margin: 0;
+		text-align: left;
+	}
+
+	.extra {
+		flex-direction: column;
+		padding: 2rem;
+	}
+
+	.extra .extra-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	footer {
+		padding: 3rem 2rem;
+	}
+
+	footer .inner-footer {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+		width: 100%;
+	}
+
+	footer .inner-footer .left-side {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 2rem;
+		width: 100%;
+	}
+
+	footer .inner-footer .left-side .social {
+		font-size: 2rem;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+
+	footer .inner-footer .center {
+		width: 100%;
+		justify-content: space-evenly;
+	}
+
+	footer .inner-footer #news {
+		width: 100%;
+	}
+
+	footer .inner-footer #news form .form-group {
+		width: 100%;
+	}
+
+	footer .rights {
+		text-align: center;
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 809px) {
+	.hero {
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.hero .hero-text {
+		width: 100%;
+	}
+
+	.hero .hero-img {
+		width: 100%;
+	}
+
+	.testify .contain {
+		margin-bottom: 3rem;
+	}
+
+	.testify .contain .subject {
+		width: 90vw;
+	}
+}
